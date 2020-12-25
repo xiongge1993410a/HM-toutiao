@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-
+    <!-- 路由出口 -->
     <router-view/>
+     <i class="toutiao toutiao-lishi"></i>
   </div>
 </template>
 
