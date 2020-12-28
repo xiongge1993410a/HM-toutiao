@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 // 自己的路由
 const routes = [
@@ -10,10 +10,10 @@ const routes = [
     name: 'login',
     component: () => import('@/views/login')
   }
-]
+];
 
 const router = new VueRouter({
   routes
-})
+});
 
-export default router
+export default router;

@@ -36,35 +36,43 @@ export default {
   name: 'LoginIndex',
   components: {},
   props: {},
-  data () {
+  data() {
     return {
-    }
+      user: {
+        mobile: '',
+        code: ''
+      }
+    };
   },
   computed: {},
   watch: {},
-  created () {},
-  mounted () {},
+  created() {},
+  mounted() {},
   methods: {
-    onSubmit (values) {
-      console.log('submit', values)
+    onSubmit() {
+      // 获取表单数据
+      // 表单验证
+    //   提交表单请求登录
+    // 根据请求响应结果处理后续操作
     }
   }
-}
+};
 </script>
+
 <style scoped lang="less">
 .login-container {
   .toutiao {
     font-size: 37px;
   }
-  .send-sms-btn  {
-    width: 152px;
+   .send-sms-btn  {
+    width: 158;
     height: 46px;
     line-height: 46px;
     background-color: #ededed;
     font-size: 22px;
     color: #666;
   }
-  .login-btn-wrap {
+   .login-btn-wrap {
     padding: 53px 33px;
     .login-btn {
       background-color: #6db4fb;
